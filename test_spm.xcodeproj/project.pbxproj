@@ -16,6 +16,7 @@
 		231256C028D9C40900D6DF97 /* test_spmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231256BF28D9C40900D6DF97 /* test_spmTests.swift */; };
 		231256CA28D9C40900D6DF97 /* test_spmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231256C928D9C40900D6DF97 /* test_spmUITests.swift */; };
 		231256CC28D9C40900D6DF97 /* test_spmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231256CB28D9C40900D6DF97 /* test_spmUITestsLaunchTests.swift */; };
+		231256DD28D9C55E00D6DF97 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 231256DC28D9C55E00D6DF97 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		231256C528D9C40900D6DF97 /* test_spmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test_spmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		231256C928D9C40900D6DF97 /* test_spmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_spmUITests.swift; sourceTree = "<group>"; };
 		231256CB28D9C40900D6DF97 /* test_spmUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_spmUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		231256DC28D9C55E00D6DF97 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231256DD28D9C55E00D6DF97 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +86,7 @@
 				231256BE28D9C40900D6DF97 /* test_spmTests */,
 				231256C828D9C40900D6DF97 /* test_spmUITests */,
 				231256A628D9C40600D6DF97 /* Products */,
+				231256DB28D9C55D00D6DF97 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +139,14 @@
 			path = test_spmUITests;
 			sourceTree = "<group>";
 		};
+		231256DB28D9C55D00D6DF97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				231256DC28D9C55E00D6DF97 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +163,8 @@
 			dependencies = (
 			);
 			name = test_spm;
+			packageProductDependencies = (
+			);
 			productName = test_spm;
 			productReference = 231256A528D9C40600D6DF97 /* test_spm.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +237,8 @@
 				Base,
 			);
 			mainGroup = 2312569C28D9C40600D6DF97;
+			packageReferences = (
+			);
 			productRefGroup = 231256A628D9C40600D6DF97 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -440,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noorbit.ios.test.test-spm";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noorbit.yoga-search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -469,7 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.noorbit.ios.test.test-spm";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.noorbit.yoga-search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
